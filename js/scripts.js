@@ -3,6 +3,10 @@ function pigLatin(text) {
       return text.concat("way");
   }
   else {
-      return text.slice(1).concat(text[0]).concat("ay")
+      for (let index = 1; index < text.length; index++) {
+          if (text[index].toLowerCase().includes("a") || text[index].toLowerCase().includes("e") || text[index].toLowerCase().includes("i") || text[index].toLowerCase().includes("o") || text[index].toLowerCase().includes("u"))  {
+          return text.slice(index).concat(text.slice(0, index)).concat("ay")
+          }
+      }
   }
 }

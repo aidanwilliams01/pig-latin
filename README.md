@@ -12,13 +12,9 @@ Test: "It will add 'ay' to the end of words that begin with a consonant."
 Code: pigLatin("code");
 Expected Output: "odecay"
 
-Test: "It will add 'ay' to the end of words that begin with two consonants."
+Test: "It will add 'ay' to the end of words that begin with two or more consonants."
 Code: pigLatin("stove");
 Expected Output: "ovestay"
-
-Test: "It will add 'ay' to the end of words that begin with three or more consonants."
-Code: pigLatin("string");
-Expected Output: "ingstray"
 
 Test: "It will add 'qu' to the end of words that begin with a 'qu'."
 Code: pigLatin("quick");
