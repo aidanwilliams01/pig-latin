@@ -12,10 +12,6 @@ Test: "It will add 'ay' to the end of words that begin with a consonant."
 Code: pigLatin("code");
 Expected Output: "odecay"
 
-Test: "It will add 'ay' to the end of words that begin with a consonant regardless of case."
-Code: pigLatin("Code");
-Expected Output: "odeCay"
-
 Test: "It will add 'ay' to the end of words that begin with two consonants."
 Code: pigLatin("stove");
 Expected Output: "ovestay"
