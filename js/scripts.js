@@ -18,3 +18,16 @@ function pigLatin(text) {
     }});
   return results.trim();
 }
+
+function onPageLoad() {
+  let form = document.querySelector("form");
+  function formSubmission(event) {
+    event.preventDefault();
+    const text = document.querySelector("input").value;
+    const results = pigLatin(text);
+    document.querySelector("p").innerText = results;
+  }
+  form.addEventListener("submit", formSubmission);
+}
+
+window.addEventListener("load", onPageLoad);
