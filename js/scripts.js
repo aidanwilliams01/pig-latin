@@ -1,5 +1,5 @@
 function pigLatin(text) {
-  if (text[0].includes("a") || text[0].includes("e") || text[0].includes("i") || text[0].includes("o") || text[0].includes("u"))  {
+  if (text[0].toLowerCase().includes("a") || text[0].toLowerCase().includes("e") || text[0].toLowerCase().includes("i") || text[0].toLowerCase().includes("o") || text[0].toLowerCase().includes("u"))  {
       return text.concat("way");
   }
 }
